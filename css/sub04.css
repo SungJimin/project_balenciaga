@@ -1,0 +1,103 @@
+/* sub04.css */
+
+/* banner */
+.banner{
+    width: 100%; background-color: #000;
+    padding:120px 0 40px;
+}
+.banner>header{
+    width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.banner header>.ttlWrap{
+    width:480px;
+    color: #FFF;
+}
+.banner header>.ttlWrap>.ttl{
+    padding: 40px 0;
+    border-left: 20px solid rgba(25,82,158,0.5);
+    opacity: 0;
+}
+.banner header>.ttlWrap>.ttl h2{
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 80px;
+    margin-left: -10px;
+    height: 80px;
+    overflow: hidden;
+}
+.banner header>.ttlWrap>.ttl p{
+    height: 40px;
+    line-height: 30px;
+    margin-left: -10px;
+}
+.banner header>.ttlWrap>h5{
+    border-bottom: 1px solid black ;
+    margin-top: 80px; line-height: 40px;
+    text-align: right; padding-right: 10px;
+    width : 0; height: 40px;
+    color: #000; overflow: hidden;
+}
+.banner header .bnImg{
+    width: 430px; height: 280px;
+    margin-top: 40px;
+    background-image: url('../img/index/index_01-04.jpg');
+    background-position: center;
+    background-size: cover;
+    box-shadow: 40px -40px 0 rgba(230,2,3,0.7);
+}
+
+/* section */
+.content>section{
+    display: flex;
+    justify-content: space-between;
+}
+.content section .shopList{
+    width: 480px; height: 560px;
+}
+.content section .shopList .shop{
+    color: #aaa; cursor: pointer;
+}
+.content section .shopList .shop.clicked{
+    color: #000;
+}
+.content section .shopList .shop dt{
+    overflow: hidden;
+}
+.content section .shopList .shop dt .locate{
+    background-image: url('../img/common/mapMarker.png');
+    width: 20px; height: 20px;
+    margin: 10px 5px;
+    float: left;
+    opacity: 0.2;
+}
+.content section .shopList .shop dt h3{
+    font-size: 18px; line-height: 40px;
+    float: left;
+}
+.content section .shopList .shop dd{
+    height: 80px; padding-left: 20px;
+}
+.content section .mapWrap{
+    width: 570px; height: 480px;
+    padding: 28px 0;
+}
+.content section .mapWrap .mapList{
+    position: relative;
+}
+.content section .mapWrap .mapList>div{
+    float: left; width: 570px; height: 600px;
+    position: absolute;
+}
+.content section .mapWrap .mapList .map01{}
+.content section .mapWrap .mapList .map02{
+    display : none;
+}
+.content section .mapWrap .mapList .map03{
+    display : none;
+}
+.content section .mapWrap .mapList .map04{
+    display : none;
+}

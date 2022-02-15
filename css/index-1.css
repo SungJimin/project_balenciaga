@@ -1,0 +1,148 @@
+/* 1_style.css */
+html, body{
+    height: 100%;
+    overflow: hidden;
+}
+ul.bgWrap{
+    width: 100%;
+    position: relative;
+}
+ul.bgWrap>li{
+    width: 100%; height: 100vh;
+    position: absolute;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: #CCC;
+}
+ul.bgWrap>.bg1{background-image: url('../img/index/index_01-01.jpg');}
+ul.bgWrap>.bg2{background-image: url('../img/index/index_01-02.jpg');}
+ul.bgWrap>.bg3{background-image: url('../img/index/index_01-03.jpg');}
+ul.bgWrap>.bg4{background-image: url('../img/index/index_01-04.jpg');}
+
+main{
+    outline: 2px solid red;
+    width: 1060px; margin: auto;
+    position: absolute;
+    right: 0; left: 0; top: 120px;
+}
+
+main>.rightContent{
+    outline: 2px solid blue;
+    width: 380px;
+    background-color: #000;
+    margin-left: auto;
+    color: #fff;
+    position: relative;
+}
+main>.rightContent>.bgArea{
+    margin-left:;
+    width: 380px;
+    overflow:hidden;
+}
+main>.rightContent>.bgArea>ul{
+    width: calc(380px * 4);
+    overflow: hidden;
+}
+main>.rightContent>.bgArea>ul>li{
+    width:380px;
+    height: calc(100vh - 160px);
+    float: left;
+}
+main>.rightContent .bgArea .c1{background-color: pink;}
+main>.rightContent .bgArea .c2{background-color: olive;}
+main>.rightContent .bgArea .c3{background-color: pink;}
+main>.rightContent .bgArea .c4{background-color: olive;}
+
+main>.rightContent>.txtGroup{
+  position: absolute;
+  top: 240px; left: -80px;
+  width: 450px;
+}
+main>.rightContent>.txtGroup>.hgroup{
+    height: 160px;
+    overflow: hidden;
+}
+main>.rightContent>.txtGroup>.hgroup>.slide{
+    height: calc(160px * 4);
+}
+main>.rightContent>.txtGroup>.hgroup>.slide>h2{
+    width: 450px; height: 160px;
+    font-size: 60px; font-weight: bold;
+    line-height: 80px;
+    padding-left: 10px;
+}
+main>.rightContent>.txtGroup>.hgroup>.slide>h2.t1{
+    text-shadow: -5px -5px 0 rgba(230,2,3,0.7), 5px 5px 0 rgba(25,82,158,0.7);
+}
+main>.rightContent>.txtGroup>.hgroup>.slide>h2.t2{
+    text-shadow: 5px 5px 0 rgba(230,2,3,0.7);
+}
+main>.rightContent>.txtGroup>.hgroup>.slide>h2.t3{
+    text-shadow:5px 5px 0 rgba(25,82,158,0.7);
+}
+main>.rightContent>.txtGroup>.hgroup>.slide>h2.t4{
+    text-shadow: 5px 5px 0 rgba(230,2,3,0.7);
+}
+
+main>.rightContent>.txtGroup>.pgroup{
+    height: 40px; overflow: hidden;
+}
+main>.rightContent>.txtGroup>.pgroup>.slide{height: calc(40px * 4);}
+main>.rightContent>.txtGroup>.pgroup>.slide>p{
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+main>.rightContent>.txtGroup>.btngroup{
+    margin-top: 40px;
+    height: 40px; overflow:hidden;
+}
+main>.rightContent>.txtGroup>.btngroup>.slide{
+    height: calc(40px * 4);
+}
+main>.rightContent>.txtGroup>.btngroup>.slide>button{
+    width: 360px; height: 36px;
+    margin: 4px 10px;
+
+    font-size: 18px; font-weight: bold;
+    line-height: 30px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid white;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+main>.rightContent>.txtGroup>.btngroup>.slide>button.b2{
+box-shadow: -5px -5px 0 rgba(230,2,3,0.7);
+}
+main>.rightContent>.txtGroup>.btngroup>.slide>button.b3{
+box-shadow: -5px -5px 0 rgba(25,82,158,0.7);
+}
+main>.rightContent>.txtGroup>.btngroup>.slide>button.b4{
+box-shadow: -5px -5px 0 rgba(230,2,3,0.7);
+}
+main>.numWrap{
+     height: calc(100vh - 160px);
+     position: absolute; top: 0; bottom: 0; right: -60px;
+     width: 60px;
+}
+main>.numWrap>.pageBtn{
+    width: 20px; height: 80px;
+    position: absolute;
+    bottom:0px; left: 10px;
+
+}
+main>.numWrap>.pageBtn li{
+    width: 20px; height: 20px;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main>.numWrap>.pageBtn .prev{background-image: url('../img/common/angle-up-solid.svg');}
+main>.numWrap>.pageBtn .next{
+    margin-top: 40px;
+    background-image: url('../img/common/angle-down-solid.svg');}
